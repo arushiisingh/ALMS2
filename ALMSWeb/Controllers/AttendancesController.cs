@@ -22,7 +22,7 @@ namespace ALMSWeb.Controllers
            // var res = (from x in db.Attendances
                       //select x).AsQueryable();
 
-            
+            //Nothing
 
             return db.Attendances.ToList<Attendance>();
         }
