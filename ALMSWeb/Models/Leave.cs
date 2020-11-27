@@ -7,24 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Attendance
+    public partial class Leave
     {
-        public int AttendanceID { get; set; }
-        public string AttendanceType { get; set; }
-        public System.DateTime AttendanceDate { get; set; }
-        public System.TimeSpan InTime { get; set; }
-        public System.TimeSpan OutTime { get; set; }
-        public int StatusOfAttendance { get; set; }
+        public int LeaveRequestID { get; set; }
+        public Nullable<int> LeaveType { get; set; }
+        public int NoOfDays { get; set; }
+        public int LeaveBalance { get; set; }
+        public System.DateTime LeaveDateFrom { get; set; }
+        public System.DateTime LeaveDateTo { get; set; }
+        public int LeaveStatus { get; set; }
         public Nullable<int> EmployeeID { get; set; }
         public Nullable<int> ManagerID { get; set; }
     
         public virtual Employee Employee { get; set; }
         public virtual Employee Employee1 { get; set; }
+        public virtual LeaveType LeaveType1 { get; set; }
         public virtual Status Status { get; set; }
     }
 }

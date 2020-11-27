@@ -8,18 +8,23 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using ALMSWeb;
+using ALMSWeb.Models;
 
 namespace ALMSWeb.Controllers
 {
     public class AttendancesController : ApiController
     {
-        private ALMS2Entities db = new ALMS2Entities();
+         ALMS2Entities db = new ALMS2Entities();
 
         // GET: api/Attendances
-        public IQueryable<Attendance> GetAttendances()
+        public IEnumerable<Attendance> GetAttendances()
         {
-            return db.Attendances;
+           // var res = (from x in db.Attendances
+                      //select x).AsQueryable();
+
+            
+
+            return db.Attendances.ToList<Attendance>();
         }
 
         // GET: api/Attendances/5

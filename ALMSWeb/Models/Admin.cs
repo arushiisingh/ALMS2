@@ -7,15 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ListOfHoliday
+    public partial class Admin
     {
-        public int HolidayID { get; set; }
-        public string HolidayName { get; set; }
-        public System.DateTime HolidayDate { get; set; }
+        public int AdminID { get; set; }
+        public string AdminName { get; set; }
+        public string AdminPassword { get; set; }
     }
 }

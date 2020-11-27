@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Data.Entity;

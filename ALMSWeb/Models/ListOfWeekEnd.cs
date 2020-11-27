@@ -7,15 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Admin
+    public partial class ListOfWeekEnd
     {
-        public int AdminID { get; set; }
-        public string AdminName { get; set; }
-        public string AdminPassword { get; set; }
+        public int WeekEndID { get; set; }
+        public System.DateTime WeekEndDate { get; set; }
     }
 }

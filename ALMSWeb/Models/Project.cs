@@ -7,26 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Status
+    public partial class Project
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Status()
+        public Project()
         {
-            this.Attendances = new HashSet<Attendance>();
-            this.Leaves = new HashSet<Leave>();
+            this.EmployeeProjects = new HashSet<EmployeeProject>();
         }
     
-        public int StatusID { get; set; }
-        public string StatusDescription { get; set; }
+        public int ProjectID { get; set; }
+        public string ProjectName { get; set; }
+        public System.DateTime ProjectStartDate { get; set; }
+        public System.DateTime ProjectEndDate { get; set; }
+        public string ProjectDetails { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Attendance> Attendances { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Leave> Leaves { get; set; }
+        public virtual ICollection<EmployeeProject> EmployeeProjects { get; set; }
     }
 }

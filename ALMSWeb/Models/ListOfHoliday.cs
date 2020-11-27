@@ -7,14 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSWeb
+namespace ALMSWeb.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class ListOfWeekEnd
+    public partial class ListOfHoliday
     {
-        public int WeekEndID { get; set; }
-        public System.DateTime WeekEndDate { get; set; }
+        public int HolidayID { get; set; }
+        public string HolidayName { get; set; }
+        public System.DateTime HolidayDate { get; set; }
     }
 }
