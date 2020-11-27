@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ALMSMVC
+namespace ALMSWeb
 {
     using System;
     using System.Collections.Generic;

@@ -6,8 +6,8 @@
 //     Manual changes to this file will be overwritten if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-//EDIT
-namespace ALMSMVC
+
+namespace ALMSWeb
 {
     using System;
     using System.Collections.Generic;
